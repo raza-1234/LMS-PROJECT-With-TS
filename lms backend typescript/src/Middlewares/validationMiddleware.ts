@@ -14,6 +14,7 @@ const bodyValidator = [
   body("name").trim().notEmpty().withMessage("Name Can Not Be Empty."),
   body("author").trim().notEmpty().withMessage("Author Can Not Be Empty."),
   body("edition").trim().notEmpty().withMessage("Edition Can Not Be Empty."),
+  body("assigned").trim().isBoolean().withMessage("Assigned Must Be Boolean Value"),
   checkValidation
 ]
 
